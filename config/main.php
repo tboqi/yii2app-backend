@@ -39,12 +39,19 @@ return [
         ],
         /*
         'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
+        'enablePrettyUrl' => true,
+        'showScriptName' => false,
+        'rules' => [
         ],
-        */
+        ],
+         */
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=10.0.75.1;dbname=yiiblog',
+            'username' => 'root',
+            'password' => 'root',
+            'charset' => 'utf8',
+        ],
     ],
     'params' => $params,
 ];
