@@ -30,24 +30,23 @@ return [
             'targets' => [
                 [
                     'class' => 'yii\log\FileTarget',
-                    'levels' => ['error', 'warning'],
+                    'levels' => ['error', 'warning', 'trace', 'info'], //
+                    // 'categories' => 'system.db.*',
                 ],
             ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
         'urlManager' => [
-        'enablePrettyUrl' => true,
-        'showScriptName' => false,
-        'rules' => [
+            'enablePrettyUrl' => true,
+            'showScriptName' => false,
+            'rules' => [
+            ],
         ],
-        ],
-         */
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=10.0.75.1;dbname=yiiblog',
+            'dsn' => 'mysql:host=10.0.75.1;dbname=yiibackend',
             'username' => 'root',
             'password' => 'root',
             'charset' => 'utf8',
